@@ -1,0 +1,310 @@
+<!-- gallery.html – ForgeSite Studio build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Repair Gallery - Our Work | Rapid Auto Repair</title>
+    <meta name="description" content="View our automotive repair work gallery. Quality repairs, engine rebuilds, brake service, and more. Licensed mechanics in Cambridge, ON with 24/7 emergency service.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h2>Rapid Auto Repair</h2>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a href="tel:+15197409123" class="btn btn-primary">
+                        <i class="fas fa-phone"></i> +1 519-740-9123
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Work Gallery</h1>
+            <p>See the quality automotive repairs we deliver every day</p>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="engine">
+                    <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Engine repair work - Replace with actual project photos">
+                    <div class="gallery-overlay">
+                        <h3>Engine Rebuild</h3>
+                        <p>Cambridge, ON</p>
+                        <button class="gallery-btn" onclick="openLightbox(0)">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="brake">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Brake service work - Replace with actual project photos">
+                    <div class="gallery-overlay">
+                        <h3>Brake System Repair</h3>
+                        <p>Cambridge, ON</p>
+                        <button class="gallery-btn" onclick="openLightbox(1)">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="transmission">
+                    <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Transmission repair - Replace with actual project photos">
+                    <div class="gallery-overlay">
+                        <h3>Transmission Service</h3>
+                        <p>Cambridge, ON</p>
+                        <button class="gallery-btn" onclick="openLightbox(2)">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="diagnostic">
+                    <img src="https://images.unsplash.com/photo-1632823469850-1d4e8b2b6c8a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Diagnostic work - Replace with actual project photos">
+                    <div class="gallery-overlay">
+                        <h3>Computer Diagnostics</h3>
+                        <p>Cambridge, ON</p>
+                        <button class="gallery-btn" onclick="openLightbox(3)">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="maintenance">
+                    <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Oil change service - Replace with actual project photos">
+                    <div class="gallery-overlay">
+                        <h3>Oil Change Service</h3>
+                        <p>Cambridge, ON</p>
+                        <button class="gallery-btn" onclick="openLightbox(4)">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="electrical">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Electrical repair - Replace with actual project photos">
+                    <div class="gallery-overlay">
+                        <h3>Electrical System Repair</h3>
+                        <p>Cambridge, ON</p>
+                        <button class="gallery-btn" onclick="openLightbox(5)">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="suspension">
+                    <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Suspension repair - Replace with actual project photos">
+                    <div class="gallery-overlay">
+                        <h3>Suspension Repair</h3>
+                        <p>Cambridge, ON</p>
+                        <button class="gallery-btn" onclick="openLightbox(6)">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cooling">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cooling system repair - Replace with actual project photos">
+                    <div class="gallery-overlay">
+                        <h3>Cooling System Service</h3>
+                        <p>Cambridge, ON</p>
+                        <button class="gallery-btn" onclick="openLightbox(7)">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="tire">
+                    <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tire service - Replace with actual project photos">
+                    <div class="gallery-overlay">
+                        <h3>Tire Installation</h3>
+                        <p>Cambridge, ON</p>
+                        <button class="gallery-btn" onclick="openLightbox(8)">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="battery">
+                    <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Battery replacement - Replace with actual project photos">
+                    <div class="gallery-overlay">
+                        <h3>Battery Replacement</h3>
+                        <p>Cambridge, ON</p>
+                        <button class="gallery-btn" onclick="openLightbox(9)">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="ac">
+                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="AC repair - Replace with actual project photos">
+                    <div class="gallery-overlay">
+                        <h3>A/C System Repair</h3>
+                        <p>Cambridge, ON</p>
+                        <button class="gallery-btn" onclick="openLightbox(10)">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="inspection">
+                    <img src="https://images.unsplash.com/photo-1632823469850-1d4e8b2b6c8a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Vehicle inspection - Replace with actual project photos">
+                    <div class="gallery-overlay">
+                        <h3>Pre-Purchase Inspection</h3>
+                        <p>Cambridge, ON</p>
+                        <button class="gallery-btn" onclick="openLightbox(11)">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-note">
+                <p><strong>Note:</strong> Replace with actual project photos from your automotive repair work</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="engine">Engine</button>
+                <button class="filter-btn" data-filter="brake">Brakes</button>
+                <button class="filter-btn" data-filter="transmission">Transmission</button>
+                <button class="filter-btn" data-filter="electrical">Electrical</button>
+                <button class="filter-btn" data-filter="maintenance">Maintenance</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+            <div class="lightbox-nav">
+                <button id="lightbox-prev">&lt;</button>
+                <button id="lightbox-next">&gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready for Quality Auto Repair?</h2>
+                <p>Join our satisfied customers and experience professional automotive service</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Get Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Vehicles Repaired</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Emergency Service</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Satisfaction Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Rapid Auto Repair</h3>
+                    <p>Your trusted automotive repair partner in Cambridge, Ontario.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Oil Changes</a></li>
+                        <li><a href="services.html">Engine Repair</a></li>
+                        <li><a href="services.html">Brake Service</a></li>
+                        <li><a href="services.html">Battery Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 519-740-9123</p>
+                        <p><i class="fas fa-envelope"></i> rapidautorepair@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 460 Franklin Blvd<br>Cambridge, ON, Canada</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <div class="hours">
+                        <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
+                        <p>Saturday: 9:00 AM - 4:00 PM</p>
+                        <p>Sunday: Emergency Only</p>
+                        <p class="emergency">24/7 Emergency Service</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rapid Auto Repair. All rights reserved. | Built by ForgeSite Studio</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
